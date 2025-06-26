@@ -1,0 +1,34 @@
+{
+  "name": "desafio-final-back-end-ii",
+  "version": "1.0.0",
+  "description": "Desafio Final - Desenvolvimento Back-end II (Unilavras)",
+  "main": "index.js",
+    "scripts": {
+      "start": "node app.js",
+      "test": "jest"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvictordev7/Desafio-Final-Back-end-II.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jvictordev7/Desafio-Final-Back-end-II/issues"
+  },
+  "homepage": "https://github.com/jvictordev7/Desafio-Final-Back-end-II#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.1",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "jest": "^30.0.2",
+    "supertest": "^7.1.1"
+  }
+}
