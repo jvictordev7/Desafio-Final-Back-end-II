@@ -34,22 +34,22 @@ A API RESTful oferece os seguintes endpoints:
 
 O projeto segue uma arquitetura modular, com a seguinte estrutura de diretórios:
 
-.
-├── configs/          # ⚙️ Arquivos de configuração (ex: conexão com o DB)
-├── controllers/      # 🧠 Lógica de negócio, recebendo requisições e preparando respostas
-├── middlewares/      # 🛡️ Funções intermediárias (ex: autenticação, tratamento de erros, validações)
-├── models/           # 📊 Scripts SQL para o banco de dados e lógica de acesso a dados
-├── routes/           # 🛣️ Definição das rotas da API
-├── services/         # 🛠️ Camada responsável pelas chamadas diretas ao banco de dados
-├── tests/            # 🧪 Testes automatizados (Jest, Supertest)
-├── utils/            # 📦 Utilitários (ex: cache, validações de dados)
-├── .env              # 🔑 Variáveis de ambiente (ignorado pelo Git)
-├── .gitignore        # 🗑️ Arquivos e pastas a serem ignorados pelo Git
-├── app.js            # 🏁 Configuração principal da aplicação Express
-├── package.json      # 📄 Dependências e scripts do projeto
-├── package-lock.json # 🔒 Gerenciamento de dependências
-├── README.md         # 📖 Documentação do projeto
-└── server.js         # 🚀 Inicialização do servidor HTTP
+    .
+    ├── configs/          # ⚙️ Arquivos de configuração (ex: conexão com o DB)
+    ├── controllers/      # 🧠 Lógica de negócio, recebendo requisições e preparando respostas
+    ├── middlewares/      # 🛡️ Funções intermediárias (ex: autenticação, tratamento de erros, validações)
+    ├── models/           # 📊 Scripts SQL para o banco de dados e lógica de acesso a dados
+    ├── routes/           # 🛣️ Definição das rotas da API
+    ├── services/         # 🛠️ Camada responsável pelas chamadas diretas ao banco de dados
+    ├── tests/            # 🧪 Testes automatizados (Jest, Supertest)
+    ├── utils/            # 📦 Utilitários (ex: cache, validações de dados)
+    ├── .env              # 🔑 Variáveis de ambiente (ignorado pelo Git)
+    ├── .gitignore        # 🗑️ Arquivos e pastas a serem ignorados pelo Git
+    ├── app.js            # 🏁 Configuração principal da aplicação Express
+    ├── package.json      # 📄 Dependências e scripts do projeto
+    ├── package-lock.json # 🔒 Gerenciamento de dependências
+    ├── README.md         # 📖 Documentação do projeto
+    └── server.js         # 🚀 Inicialização do servidor HTTP
 
 ## Banco de Dados 🗄️
 
