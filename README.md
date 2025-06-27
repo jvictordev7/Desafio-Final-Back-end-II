@@ -34,6 +34,7 @@ A API RESTful oferece os seguintes endpoints:
 
 O projeto segue uma arquitetura modular, com a seguinte estrutura de diretórios:
 
+.
 ├── configs/          # ⚙️ Arquivos de configuração (ex: conexão com o DB)
 ├── controllers/      # 🧠 Lógica de negócio, recebendo requisições e preparando respostas
 ├── middlewares/      # 🛡️ Funções intermediárias (ex: autenticação, tratamento de erros, validações)
