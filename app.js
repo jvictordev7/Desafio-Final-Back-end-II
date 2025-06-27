@@ -21,4 +21,4 @@ app.use('/', authRoutes);
 
 app.use(errorHandler);
 
-module.exports = app; // ✅ exporta somente o app (sem listen)
+module.exports = app; 
