@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import api from '../services/api';
-import { useNavigate } from 'react-router-dom';
-import './Login.css'; // Importe o CSS customizado
+import { useNavigate, Link } from 'react-router-dom';
+import './Login.css';
 
 function Login() {
   const [usuario, setUsuario] = useState('');
@@ -30,24 +30,28 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
-      <form className="login-form" onSubmit={handleLogin}>
-        <h2>Login</h2>
+    <div className="login-dark-bg">
+      <form className="login-dark-form" onSubmit={handleLogin}>
+        <h2 className="login-dark-title">Acesse o Sistema</h2>
         <input
           value={usuario}
           onChange={e => setUsuario(e.target.value)}
           placeholder="Usuário"
-          className="login-input"
+          className="login-dark-input"
         />
         <input
           type="password"
           value={senha}
           onChange={e => setSenha(e.target.value)}
           placeholder="Senha"
-          className="login-input"
+          className="login-dark-input"
         />
-        <button type="submit" className="login-button">Entrar</button>
-        {erro && <p className="login-error">{erro}</p>}
+        <button type="submit" className="login-dark-button">Entrar</button>
+        {erro && <p className="login-dark-error">{erro}</p>}
+        <div style={{ marginTop: '1rem', textAlign: 'center' }}>
+          <Link to="/cadastro" style={{ color: '#f1c40f', marginRight: 16 }}>Criar conta</Link>
+          <Link to="/esqueci-senha" style={{ color: '#f1c40f' }}>Esqueci minha senha</Link>
+        </div>
       </form>
     </div>
   );

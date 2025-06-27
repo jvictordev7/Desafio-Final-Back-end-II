@@ -1,58 +1,70 @@
-.login-container {
+.login-dark-bg {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, #2980b9, #6dd5fa, #ffffff);
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
 }
 
-.login-form {
-  background: #fff;
+.login-dark-form {
+  background: #18191a;
   padding: 2.5rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  border-radius: 14px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.45);
   display: flex;
   flex-direction: column;
-  min-width: 320px;
+  min-width: 340px;
 }
 
-.login-form h2 {
-  margin-bottom: 1.5rem;
-  color: #2980b9;
+.login-dark-title {
+  margin-bottom: 1.7rem;
+  color: #f1c40f;
   text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-.login-input {
-  margin-bottom: 1rem;
-  padding: 0.75rem;
-  border: 1px solid #b2bec3;
-  border-radius: 6px;
+.login-dark-input {
+  margin-bottom: 1.1rem;
+  padding: 0.85rem;
+  border: 1.5px solid #333;
+  border-radius: 7px;
   font-size: 1rem;
+  background: #232526;
+  color: #f5f6fa;
   outline: none;
-  transition: border 0.2s;
+  transition: border 0.2s, background 0.2s;
 }
 
-.login-input:focus {
-  border: 1.5px solid #2980b9;
+.login-dark-input:focus {
+  border: 1.5px solid #f1c40f;
+  background: #232526;
 }
 
-.login-button {
-  background: #2980b9;
-  color: #fff;
+.login-dark-button {
+  background: linear-gradient(90deg, #f1c40f 0%, #f39c12 100%);
+  color: #18191a;
   border: none;
-  padding: 0.75rem;
-  border-radius: 6px;
-  font-size: 1rem;
+  padding: 0.85rem;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.2s;
-}
-
-.login-button:hover {
-  background: #2471a3;
-}
-
-.login-error {
-  color: #e74c3c;
   margin-top: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.login-dark-button:hover {
+  background: linear-gradient(90deg, #f39c12 0%, #f1c40f 100%);
+  color: #232526;
+}
+
+.login-dark-error {
+  color: #e74c3c;
+  margin-top: 0.7rem;
   text-align: center;
+  font-weight: 500;
+  background: #232526;
+  border-radius: 5px;
+  padding: 0.5rem;
 }

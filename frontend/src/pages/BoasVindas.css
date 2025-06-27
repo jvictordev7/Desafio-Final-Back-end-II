@@ -1,0 +1,47 @@
+.boasvindas-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boasvindas-container {
+  background: #18191a;
+  padding: 3rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.45);
+  text-align: center;
+  color: #f5f6fa;
+  min-width: 340px;
+}
+
+.boasvindas-container h1 {
+  color: #f1c40f;
+  margin-bottom: 1.2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.boasvindas-container p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #b2bec3;
+}
+
+.boasvindas-btn {
+  background: linear-gradient(90deg, #f1c40f 0%, #f39c12 100%);
+  color: #18191a;
+  border: none;
+  padding: 0.9rem 2.2rem;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.boasvindas-btn:hover {
+  background: linear-gradient(90deg, #f39c12 0%, #f1c40f 100%);
+  color: #232526;
+}

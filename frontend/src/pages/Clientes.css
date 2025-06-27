@@ -1,0 +1,164 @@
+html, body, #root {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Impede scroll lateral */
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%) !important;
+  overflow-x: hidden; /* Impede scroll lateral */
+}
+
+.clientes-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: transparent;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 40px;
+  overflow-x: hidden; /* Impede scroll lateral */
+}
+
+.clientes-container {
+  background: #18191a;
+  padding: 2rem 2.5rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.45);
+  min-width: 400px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.clientes-title {
+  color: #f1c40f;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.clientes-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.clientes-input {
+  flex: 1 1 45%;
+  min-width: 160px;
+  padding: 0.7rem;
+  border: 1.5px solid #333;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: #232526;
+  color: #f5f6fa;
+  outline: none;
+  transition: border 0.2s, background 0.2s;
+}
+
+.clientes-input:focus {
+  border: 1.5px solid #f1c40f;
+  background: #232526;
+}
+
+.clientes-button {
+  background: linear-gradient(90deg, #f1c40f 0%, #f39c12 100%);
+  color: #18191a;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.clientes-button-cancel {
+  background: #232526;
+  color: #f1c40f;
+  border: 1.5px solid #f1c40f;
+  padding: 0.7rem 1.2rem;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.clientes-button:hover {
+  background: linear-gradient(90deg, #f39c12 0%, #f1c40f 100%);
+  color: #232526;
+}
+
+.clientes-button-cancel:hover {
+  background: #f1c40f;
+  color: #232526;
+}
+
+.clientes-msg {
+  color: #27ae60;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.clientes-erro {
+  color: #e74c3c;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.clientes-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clientes-item {
+  background: #232526;
+  color: #f5f6fa;
+  border-radius: 7px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clientes-edit, .clientes-delete {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.clientes-edit {
+  background: #f1c40f;
+  color: #232526;
+}
+
+.clientes-edit:hover {
+  background: #f39c12;
+  color: #fff;
+}
+
+.clientes-delete {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.clientes-delete:hover {
+  background: #c0392b;
+  color: #fff;
+}
