@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
 const clienteRoutes = require('./routes/clienteRoutes');
@@ -8,6 +9,7 @@ const usuarioRoutes = require('./routes/usuarioRoutes');
 const authRoutes = require('./routes/authRoutes');
 const errorHandler = require('./middlewares/errorHandler');
 
+app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
@@ -21,4 +23,4 @@ app.use('/', authRoutes);
 
 app.use(errorHandler);
 
-module.exports = app; 
+module.exports = app;
